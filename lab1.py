@@ -2,9 +2,9 @@
 
 """ Graded Lab #1 for Inf1340, Fall 2015 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
+__author__ = 'Hirra Sheikh'
+__email__ = "hirra.sheikh@hotmail.com"
+__copyright__ = "2015 Hirra Sheikh"
 __license__ = "MIT License"
 
 
@@ -17,4 +17,14 @@ def vowel_or_consonant():
     "sometimes a vowel, sometimes a consonant". Otherwise your program should
     display a message indicating that the letter is a "consonant".
     """
+
+    letter = raw_input("Choose a letter ")
+    if (letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u"):
+        print ("vowel")
+    elif (letter == "y"):
+        print ("sometimes a vowel, sometimes a consonant")
+    else:
+        print ("consonant")
+
+
 
