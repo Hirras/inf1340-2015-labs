@@ -2,7 +2,7 @@
 
 """ Graded Lab #2 for Inf1340, Fall 2015 """
 
-__author__ = 'Hirra Sheikh'
+__author__ = 'Hirra'
 
 
 """
