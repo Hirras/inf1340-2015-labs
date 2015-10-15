@@ -2,10 +2,7 @@
 
 """ Graded Lab #2 for Inf1340, Fall 2015 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
-__license__ = "MIT License"
+__author__ = 'Hirra Sheikh'
 
 
 """
@@ -18,6 +15,9 @@ entered. A legal value is any integer.
 """
 
 def name_that_shape():
+
+
+
     """
     For a given number of sides in a regular polygon, returns the shape name
 
@@ -38,8 +38,8 @@ def name_that_shape():
 
     """
 
-    sides = int(raw_input("Number of sides:"))
-
+    sides = get_user_input()
+    print sides
     if sides == 3:
         print("triangle")
     elif sides == 4:
@@ -59,4 +59,28 @@ def name_that_shape():
     else:
         print("Error")
 
-# name_that_shape()
+
+def get_user_input():
+
+    output = ""
+
+    input_is_an_integer = False
+
+    while not input_is_an_integer:
+        # while loop so we can get input
+        output = raw_input("Number of sides:")
+
+        # check whether input is the correct form
+        if output.isdigit() or (output[0] == '-' and output[1:].isdigit()):
+            output = int(output)
+            input_is_an_integer = True
+        else:
+            print("Numbers Only")
+
+
+    return output
+
+
+name_that_shape()
+
+
